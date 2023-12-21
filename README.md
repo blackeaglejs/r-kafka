@@ -48,9 +48,6 @@ We are using trivup to spin up a local kafka cluster for testing
 
 ### Start Local Kafka Cluster
 
-/opt/bitnami/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092
---create --topic test-topic --partitions 4
-
 Install docker-compose:
 
 ```sh
@@ -66,7 +63,7 @@ docker-compose up -d
 Create a new topic
 
 ```sh
-/opt/bitnami/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic test-topic --partitions 4
+docker exec kafka-server /opt/bitnami/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic test-topic --partitions 4
 ```
 
 ### Run tests
