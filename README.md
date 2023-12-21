@@ -44,8 +44,6 @@ brew install librdkafka
 
 ## (Integration) Tests
 
-We are using trivup to spin up a local kafka cluster for testing
-
 ### Start Local Kafka Cluster
 
 Install docker-compose:
