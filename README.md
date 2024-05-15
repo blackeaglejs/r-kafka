@@ -110,3 +110,9 @@ docker exec kafka-server /opt/bitnami/kafka/bin/kafka-topics.sh --bootstrap-serv
 ```sh
 Rscript -e "devtools::install(); devtools::test();"
 ```
+
+## Funding
+
+This project is partly funded by the R-Consortium https://www.r-consortium.org/
+
+<img src="R-con.png" alt="Logo of R Consortium" height="80"/>
