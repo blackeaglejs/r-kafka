@@ -92,6 +92,8 @@ public:
         case RdKafka::ERR_NO_ERROR:
             payload = msg->payload();
             payload_size = msg->len();
+            
+                    std::cout << result << std::endl;
 
             result["payload_data"] = std::string(static_cast<const char *>(payload), payload_size);
 
