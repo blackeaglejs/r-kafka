@@ -1,6 +1,7 @@
 #include <librdkafka/rdkafkacpp.h>
 #include <Rcpp.h>
 #include "utils.h"
+#include <iostream>
 
 using namespace Rcpp;
 
@@ -84,6 +85,7 @@ public:
         size_t payload_size;
 
         RdKafka::Message *msg = consumer->consume(timeout_ms);
+        std::cout << msg << std::endl;
 
         switch (msg->err())
         {
